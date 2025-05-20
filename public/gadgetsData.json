@@ -1,0 +1,112 @@
+[
+  {
+    "product_id": "LAP001",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co/FFzdx95/ales-nesetril-Im7l-Zjxe-Lhg-unsplash.jpg",
+    "category": "laptop",
+    "price": 1099.99,
+    "description": "Compact and powerful ultrabook with a stunning display.",
+    "Specification": ["13.3\" FHD Display", "Intel i7", "16GB RAM", "512GB SSD"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "LAP002",
+    "product_title": "MacBook Air M2",
+    "product_image": "https://i.ibb.co/7d7sVyZk/maxim-hopman-Hin-rzh-Od-Ws-unsplash.jpg",
+    "category": "laptop",
+    "price": 1249.00,
+    "description": "Lightweight laptop with Apple’s M2 chip and superb battery life.",
+    "Specification": ["13.6\" Retina Display", "Apple M2", "8GB RAM", "256GB SSD"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "LAP003",
+    "product_title": "HP Spectre x360",
+    "product_image": "https://i.ibb.co/QvgxHxCg/howard-bouchevereau-RSCir-J70-NDM-unsplash.jpg",
+    "category": "laptop",
+    "price": 1399.50,
+    "description": "Premium 2-in-1 laptop with a flexible design and great performance.",
+    "Specification": ["14\" OLED Touch", "Intel i7", "16GB RAM", "1TB SSD"],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": "LAP004",
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://i.ibb.co/VYQvQ6Zd/campaign-creators-OGOWDVLb-MSc-unsplash.jpg",
+    "category": "laptop",
+    "price": 1599.00,
+    "description": "Durable business laptop with excellent keyboard and performance.",
+    "Specification": ["14\" FHD", "Intel i7", "16GB RAM", "512GB SSD"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "LAP005",
+    "product_title": "Asus ROG Zephyrus G14",
+    "product_image": "https://i.ibb.co/9mjwKXzB/dell-8pb7-Hq539-Zw-unsplash.jpg",
+    "category": "laptop",
+    "price": 1499.99,
+    "description": "Powerful gaming laptop with a compact and stylish design.",
+    "Specification": ["14\" QHD", "AMD Ryzen 9", "32GB RAM", "1TB SSD", "RTX 4060"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "LAP006",
+    "product_title": "Acer Swift 3",
+    "product_image": "https://i.ibb.co/WpqLDh42/austin-poon-JO-S6ew-Bq-Ak-unsplash.jpg",
+    "category": "laptop",
+    "price": 699.00,
+    "description": "Affordable lightweight laptop for everyday use.",
+    "Specification": ["14\" FHD", "Intel i5", "8GB RAM", "512GB SSD"],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "product_id": "PHN001",
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://i.ibb.co/wNSfRHLN/walling-52-H5-Nfi5-Wi-E-unsplash.jpg",
+    "category": "phone",
+    "price": 999.99,
+    "description": "Apple’s flagship phone with powerful performance and top-notch camera.",
+    "Specification": ["6.1\" Super Retina XDR", "A16 Bionic", "128GB Storage"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "PHN002",
+    "product_title": "Samsung Galaxy S23",
+    "product_image": "https://i.ibb.co/fY1cpzry/lacie-cueto-e-Jsh9-LKn-X-A-unsplash.jpg",
+    "category": "phone",
+    "price": 899.00,
+    "description": "High-end Android phone with excellent display and camera.",
+    "Specification": ["6.1\" AMOLED", "Snapdragon 8 Gen 2", "256GB Storage"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "ACC001",
+    "product_title": "Sony WH-1000XM5 Headphones",
+    "product_image": "https://i.ibb.co/ZRrV0NQb/luke-peterson-l-UMj2-Zv5-HUE-unsplash.jpg",
+    "category": "accessory",
+    "price": 379.99,
+    "description": "Industry-leading noise-canceling wireless headphones.",
+    "Specification": ["Bluetooth", "Noise Cancellation", "30hr Battery"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "ACC002",
+    "product_title": "Logitech MX Master 3S",
+    "product_image": "https://i.ibb.co/wZsxYQRq/oscar-ivan-esquivel-arteaga-Ztx-ED1cp-B1-E-unsplash.jpg",
+    "category": "accessory",
+    "price": 99.99,
+    "description": "Advanced wireless mouse with ergonomic design and silent clicks.",
+    "Specification": ["Bluetooth/USB", "8000 DPI Sensor", "Customizable Buttons"],
+    "availability": true,
+    "rating": 4.7
+  }
+]
