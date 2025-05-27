@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 
 const Root = () => {
     return (
-        <div className='max-w-11/12 mx-auto sora-body'>
+        <div className='max-w-7xl mx-auto sora-body'>
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
