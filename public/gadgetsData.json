@@ -6,7 +6,12 @@
     "category": "laptop",
     "price": 1099.99,
     "description": "Compact and powerful ultrabook with a stunning display.",
-    "Specification": ["13.3\" FHD Display", "Intel i7", "16GB RAM", "512GB SSD"],
+    "Specification": [
+      "13.3\" FHD Display",
+      "Intel i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
     "availability": true,
     "rating": 4.7
   },
@@ -17,7 +22,12 @@
     "category": "laptop",
     "price": 1249.00,
     "description": "Lightweight laptop with Apple’s M2 chip and superb battery life.",
-    "Specification": ["13.6\" Retina Display", "Apple M2", "8GB RAM", "256GB SSD"],
+    "Specification": [
+      "13.6\" Retina Display",
+      "Apple M2",
+      "8GB RAM",
+      "256GB SSD"
+    ],
     "availability": true,
     "rating": 4.8
   },
@@ -28,7 +38,12 @@
     "category": "laptop",
     "price": 1399.50,
     "description": "Premium 2-in-1 laptop with a flexible design and great performance.",
-    "Specification": ["14\" OLED Touch", "Intel i7", "16GB RAM", "1TB SSD"],
+    "Specification": [
+      "14\" OLED Touch",
+      "Intel i7",
+      "16GB RAM",
+      "1TB SSD"
+    ],
     "availability": false,
     "rating": 4.5
   },
@@ -39,7 +54,12 @@
     "category": "laptop",
     "price": 1599.00,
     "description": "Durable business laptop with excellent keyboard and performance.",
-    "Specification": ["14\" FHD", "Intel i7", "16GB RAM", "512GB SSD"],
+    "Specification": [
+      "14\" FHD",
+      "Intel i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
     "availability": true,
     "rating": 4.6
   },
@@ -50,7 +70,13 @@
     "category": "laptop",
     "price": 1499.99,
     "description": "Powerful gaming laptop with a compact and stylish design.",
-    "Specification": ["14\" QHD", "AMD Ryzen 9", "32GB RAM", "1TB SSD", "RTX 4060"],
+    "Specification": [
+      "14\" QHD",
+      "AMD Ryzen 9",
+      "32GB RAM",
+      "1TB SSD",
+      "RTX 4060"
+    ],
     "availability": true,
     "rating": 4.7
   },
@@ -61,7 +87,12 @@
     "category": "laptop",
     "price": 699.00,
     "description": "Affordable lightweight laptop for everyday use.",
-    "Specification": ["14\" FHD", "Intel i5", "8GB RAM", "512GB SSD"],
+    "Specification": [
+      "14\" FHD",
+      "Intel i5",
+      "8GB RAM",
+      "512GB SSD"
+    ],
     "availability": true,
     "rating": 4.2
   },
@@ -72,7 +103,11 @@
     "category": "phone",
     "price": 999.99,
     "description": "Apple’s flagship phone with powerful performance and top-notch camera.",
-    "Specification": ["6.1\" Super Retina XDR", "A16 Bionic", "128GB Storage"],
+    "Specification": [
+      "6.1\" Super Retina XDR",
+      "A16 Bionic",
+      "128GB Storage"
+    ],
     "availability": true,
     "rating": 4.9
   },
@@ -83,7 +118,11 @@
     "category": "phone",
     "price": 899.00,
     "description": "High-end Android phone with excellent display and camera.",
-    "Specification": ["6.1\" AMOLED", "Snapdragon 8 Gen 2", "256GB Storage"],
+    "Specification": [
+      "6.1\" AMOLED",
+      "Snapdragon 8 Gen 2",
+      "256GB Storage"
+    ],
     "availability": true,
     "rating": 4.6
   },
@@ -94,7 +133,11 @@
     "category": "accessory",
     "price": 379.99,
     "description": "Industry-leading noise-canceling wireless headphones.",
-    "Specification": ["Bluetooth", "Noise Cancellation", "30hr Battery"],
+    "Specification": [
+      "Bluetooth",
+      "Noise Cancellation",
+      "30hr Battery"
+    ],
     "availability": true,
     "rating": 4.8
   },
@@ -105,7 +148,11 @@
     "category": "accessory",
     "price": 99.99,
     "description": "Advanced wireless mouse with ergonomic design and silent clicks.",
-    "Specification": ["Bluetooth/USB", "8000 DPI Sensor", "Customizable Buttons"],
+    "Specification": [
+      "Bluetooth/USB",
+      "8000 DPI Sensor",
+      "Customizable Buttons"
+    ],
     "availability": true,
     "rating": 4.7
   }

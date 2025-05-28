@@ -8,7 +8,7 @@ const Banner = () => {
                 <div>
                     <h1 className="text-6xl font-bold">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                     <Heading subtitle='Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'></Heading>
-                    <button className="btn mb-12 text-purple-600">Shop Now</button>
+                    <button className="btn btn-xl text-purple-600 rounded-4xl py-4 px-8 mb-12">Shop Now</button>
                 </div>
                 <img
                     src={bannerImg}

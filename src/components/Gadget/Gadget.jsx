@@ -16,7 +16,7 @@ const Gadget = ({ gadget }) => {
                 <h2 className="card-title mb-4">{product_title}</h2>
                 <p>Price: {price}</p>
                 <div className="card-actions mt-4">
-                    <button className="btn btn-primary">View Details</button>
+                    <button className="btn btn-lg btn-outline text-purple-600 rounded-4xl">View Details</button>
                 </div>
             </div>
         </div>
