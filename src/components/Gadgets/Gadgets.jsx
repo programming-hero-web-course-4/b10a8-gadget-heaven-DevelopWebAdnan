@@ -13,7 +13,7 @@ const Gadgets = () => {
     }, [])
     return (
         <div>
-            <h2 className="text-4xl font-bold text-center">Gadgets</h2>
+            <h2 className="text-4xl font-bold text-center mt-96">Gadgets</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                 {
                     gadgets.map(gadget => <Gadget gadget={gadget} key={gadget.product_id}></Gadget>)
