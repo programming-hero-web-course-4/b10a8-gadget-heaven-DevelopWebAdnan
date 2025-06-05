@@ -3,12 +3,12 @@ import { useParams } from 'react-router-dom';
 
 const GadgetDetail = () => {
 
-    const param = useParams();
-    console.log(param)
+    const {product_id} = useParams();
+    console.log(product_id)
     
     return (
         <div>
-            <h2>Gadget details</h2>
+            <h2>Gadget details: {product_id}</h2>
         </div>
     );
 };
