@@ -11,7 +11,7 @@ const Gadget = ({ gadget }) => {
                 <img
                     src={product_image}
                     alt={product_title}
-                    className="rounded-xl h-full w-full" />
+                    className="rounded-xl h-full w-full object-cover" />
             </figure>
             <div className="">
                 <h2 className="card-title mb-4">{product_title}</h2>
