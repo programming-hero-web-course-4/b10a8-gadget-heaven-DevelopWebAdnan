@@ -1,6 +1,6 @@
 [
   {
-    "product_id": "LAP001",
+    "product_id": 1,
     "product_title": "Dell XPS 13",
     "product_image": "https://i.ibb.co/FFzdx95/ales-nesetril-Im7l-Zjxe-Lhg-unsplash.jpg",
     "category": "laptop",
@@ -16,7 +16,7 @@
     "rating": 4.7
   },
   {
-    "product_id": "LAP002",
+    "product_id": 2,
     "product_title": "MacBook Air M2",
     "product_image": "https://i.ibb.co/7d7sVyZk/maxim-hopman-Hin-rzh-Od-Ws-unsplash.jpg",
     "category": "laptop",
@@ -32,7 +32,7 @@
     "rating": 4.8
   },
   {
-    "product_id": "LAP003",
+    "product_id": 3,
     "product_title": "HP Spectre x360",
     "product_image": "https://i.ibb.co/QvgxHxCg/howard-bouchevereau-RSCir-J70-NDM-unsplash.jpg",
     "category": "laptop",
@@ -48,7 +48,7 @@
     "rating": 4.5
   },
   {
-    "product_id": "LAP004",
+    "product_id": 4,
     "product_title": "Lenovo ThinkPad X1 Carbon",
     "product_image": "https://i.ibb.co/VYQvQ6Zd/campaign-creators-OGOWDVLb-MSc-unsplash.jpg",
     "category": "laptop",
@@ -64,7 +64,7 @@
     "rating": 4.6
   },
   {
-    "product_id": "LAP005",
+    "product_id": 5,
     "product_title": "Asus ROG Zephyrus G14",
     "product_image": "https://i.ibb.co/9mjwKXzB/dell-8pb7-Hq539-Zw-unsplash.jpg",
     "category": "laptop",
@@ -81,7 +81,7 @@
     "rating": 4.7
   },
   {
-    "product_id": "LAP006",
+    "product_id": 6,
     "product_title": "Acer Swift 3",
     "product_image": "https://i.ibb.co/WpqLDh42/austin-poon-JO-S6ew-Bq-Ak-unsplash.jpg",
     "category": "laptop",
@@ -97,7 +97,7 @@
     "rating": 4.2
   },
   {
-    "product_id": "PHN001",
+    "product_id": 7,
     "product_title": "iPhone 14 Pro",
     "product_image": "https://i.ibb.co/wNSfRHLN/walling-52-H5-Nfi5-Wi-E-unsplash.jpg",
     "category": "phone",
@@ -112,7 +112,7 @@
     "rating": 4.9
   },
   {
-    "product_id": "PHN002",
+    "product_id": 8,
     "product_title": "Samsung Galaxy S23",
     "product_image": "https://i.ibb.co/fY1cpzry/lacie-cueto-e-Jsh9-LKn-X-A-unsplash.jpg",
     "category": "phone",
@@ -127,7 +127,7 @@
     "rating": 4.6
   },
   {
-    "product_id": "ACC001",
+    "product_id": 9,
     "product_title": "Sony WH-1000XM5 Headphones",
     "product_image": "https://i.ibb.co/ZRrV0NQb/luke-peterson-l-UMj2-Zv5-HUE-unsplash.jpg",
     "category": "accessory",
@@ -142,7 +142,7 @@
     "rating": 4.8
   },
   {
-    "product_id": "ACC002",
+    "product_id": 10,
     "product_title": "Logitech MX Master 3S",
     "product_image": "https://i.ibb.co/wZsxYQRq/oscar-ivan-esquivel-arteaga-Ztx-ED1cp-B1-E-unsplash.jpg",
     "category": "accessory",
