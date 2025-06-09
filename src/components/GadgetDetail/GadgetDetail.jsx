@@ -15,31 +15,29 @@ const GadgetDetail = () => {
 
 
     return (
-        <div className=" hero bg-purple-600">
-            <div className="hero-content flex-col mb-64">
+        <div className="relative hero bg-purple-600 h-96 mb-48 md:mb-64 lg:mb-80">
+            <div className="absolute top-3 md:top-4 lg:top-5 hero-content flex-col">
                 <div className="max-w-6xl">
-                    <div className='text-center text-white mb-4 md:mb-8 lg:mb-12'>
-                        <h2 className="text-3xl font-bold">Product Details</h2>
+                        <Heading title='Product Details'></Heading>
                         <Heading subtitle='Explore the latest gadgets that fulfill the daily needs in details. From the image of the product to specification, add-to-cart button, it shows these in details.'></Heading>
-                    </div>
                 </div>
-                <div className="-mb-16 md:-mb-48 lg:-mb-96 card lg:card-side bg-white">
-                    <figure className='lg:max-w-md pt-8 px-8 lg:pr-0 lg:pb-8'>
+                <div className=" card lg:card-side bg-white">
+                   <figure className='lg:max-w-md pt-8 px-8 lg:pr-0 lg:pb-8'>
                         <img
                             src={product_image}
                             alt={product_title}
-                            className="h-full w-full rounded-2xl" />
+                            className="h-full w-full rounded-2xl object-cover" />
                     </figure>
                     <div className="card-body">
                         <h3 className="font-semibold text-3xl">{product_title}</h3>
                         <h4 className='font-semibold text-xl mt-3 mb-4'>Price: {price}</h4>
                         <div><button className="btn btn-outline btn-accent btn-md bg-green-100 rounded-4xl">{availability == true ? "In Stock" : "Not In Stock"}</button></div>
-                        <p className='mt-4 text-lg'>{description}</p>
+                        <p className='mt-4 text-lg opacity-60'>{description}</p>
                         <h5 className="mt-4 mb-3 font-bold text-lg">Specification:</h5>
                         <ol>
                             {
                                 Specification.map((SingleSpecification, index) =>
-                                    <li key={index} className=" text-xs uppercase font-semibold opacity-60">{SingleSpecification}</li>
+                                    <li key={index} className="text-lg opacity-60">{SingleSpecification}</li>
                                 )
                             }
                         </ol>
