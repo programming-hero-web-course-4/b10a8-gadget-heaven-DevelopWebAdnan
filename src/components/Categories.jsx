@@ -17,7 +17,7 @@ const Categories = ({ categories }) => {
                     {/* Sidebar content here */}
                     {
                         categories.map(category => (
-                            <li><Link key={category.product_id} to={`/category/${category.category}`}>{category.category}</Link></li>
+                            <li key={category.product_id}><Link to={`/category/${category.category}`}>{category.category}</Link></li>
                         ))
                     }
                 </ul>
