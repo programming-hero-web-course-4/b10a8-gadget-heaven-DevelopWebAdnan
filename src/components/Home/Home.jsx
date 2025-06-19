@@ -1,16 +1,16 @@
 
-import { Outlet, useLoaderData } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Banner from '../Banner/Banner';
-import Categories from '../Categories';
+import Categories from '../Categories/Categories';
 
 const Home = () => {
-    const categories = useLoaderData()
+
     return (
         <div>
             <Banner></Banner>
             <h2 className="text-4xl font-bold text-center mb-8 md:mb-12">Explore Cutting-Edge Gadgets</h2>
             <div className='lg:flex'>
-                <Categories categories={categories}></Categories>
+                <Categories></Categories>
                 <Outlet></Outlet>
             </div>
         </div>

@@ -5,22 +5,24 @@ import { useLoaderData, useParams } from 'react-router-dom';
 
 const Gadgets = () => {
     const data = useLoaderData();
-    console.log(data);
-    const {category} = useParams()
+
+    const { category } = useParams()
 
     const [gadgets, setGadgets] = useState([]);
 
     useEffect(() => {
-        if(category){
+        if (category) {
             const filteredByCategory = [...data].filter(
-            gadget => gadget.category === category
-        )
+                gadget => gadget.category === category
+            )
             setGadgets(filteredByCategory)
         }
         else {
             setGadgets(data.slice(0, 9))
         }
     }, [category, data])
+    console.log(data);
+    
     return (
         <div>
             <p>Gadget cards....{category}</p>
