@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const Category = ({uniqueGadgetsCategories}) => {
-    console.log('uniqueGadgetsCategories from Category', uniqueGadgetsCategories);
+const Category = ({ uniqueGadgetsCategories }) => {
+    const navigate = useNavigate()
+    console.log('uniqueGadgetsCategories props from Category.jsx', uniqueGadgetsCategories);
 
     return (
         <div>
             <h2 className='text-2xl font-bold'>Category</h2>
-            
+
             <div className="drawer lg:drawer-open lg:flex-1/4">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col items-center justify-center">
@@ -18,8 +19,9 @@ const Category = ({uniqueGadgetsCategories}) => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-                    <ul className="menu bg-base-200 text-base-content min-h-full w-56 p-4">
+                    <ul className="menu bg-base-200 text-base-content w-56 p-4">
                         {/* Sidebar content here */}
+                         <button className="btn btn-warning" onClick={() => navigate('/')}>All Product</button>
                         {
                             uniqueGadgetsCategories.map(uniqueGadgetCategory => (
                                 <li key={uniqueGadgetCategory}> <Link to={`/category/${uniqueGadgetCategory}`}>{uniqueGadgetCategory}</Link></li>

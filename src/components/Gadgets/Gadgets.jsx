@@ -21,7 +21,7 @@ const Gadgets = () => {
             setGadgets(data.slice(0, 9))
         }
     }, [category, data])
-    console.log(data);
+    // console.log(data);
     
     return (
         <div>
