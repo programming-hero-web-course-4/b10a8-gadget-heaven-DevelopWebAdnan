@@ -1,16 +1,17 @@
 import React from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Category from '../Category/Category';
 
-const Categories = () => {
-    const gadgetsData = useLoaderData();
-    console.log('gadgetsData from Categories.jsx', gadgetsData);
+const Categories = ({categories}) => {
+    console.log('categories from Categories.jsx: ', categories);
+    // // const gadgetsData = useLoaderData();
+    // console.log('gadgetsData from Categories.jsx', gadgetsData);
     // const data[5] =
     //     { product_id: 6, product_title: 'Acer Swift 3', product_image: 'https://i.ibb.co/WpqLDh42/austin-poon-JO-S6ew-Bq-Ak-unsplash.jpg', category: 'laptop', price: 699, … }
 
     const gadgetsCategories = [];
 
-    for (const gadgetsObj of gadgetsData) {
+    for (const gadgetsObj of categories) {
         // console.log('gadgetsObj from Categories', gadgetsObj);
         gadgetsCategories.push(gadgetsObj.category);
     }
@@ -29,7 +30,7 @@ const Categories = () => {
         return uniqueCategories;
     }
 
-    const uniqueGadgetsCategories = noDuplicates(gadgetsData);
+    const uniqueGadgetsCategories = noDuplicates(categories);
     console.log('uniqueGadgetsCategories: ', uniqueGadgetsCategories);
 
 

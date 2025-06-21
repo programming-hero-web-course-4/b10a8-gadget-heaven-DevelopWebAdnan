@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Gadget from '../Gadget/Gadget';
 import { useLoaderData, useParams } from 'react-router-dom';
+import AddedGadgets from '../AddedGadgets/AddedGadgets';
 
 const Gadgets = () => {
     const data = useLoaderData();
@@ -30,6 +31,9 @@ const Gadgets = () => {
                 {
                     gadgets.map(gadget => <Gadget gadget={gadget} key={gadget.product_id}></Gadget>)
                 }
+                {/* {
+                    gadgets.map(gadget => <AddedGadgets gadget={gadget} key={gadget.product_id}></AddedGadgets>)
+                } */}
             </div>
         </div>
     );

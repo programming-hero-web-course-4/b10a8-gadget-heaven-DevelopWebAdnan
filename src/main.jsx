@@ -40,24 +40,29 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Categories></Categories>,
-        loader: () => fetch('/gadgetsData.json'),
       },
       {
         path: 'gadgets/:product_id',
         element: <GadgetDetail></GadgetDetail>,
-        loader: () => fetch('/gadgetsData.json')
+        loader: () => fetch('/gadgetsData.json'),
       },
       {
         path: 'dashboard',
         element: <Dashboard></Dashboard>,
         loader: () => fetch('gadgetsData.json'),
-        children: [
-          {
-            path: 'addedGadgets',
-            element: <AddedGadgets></AddedGadgets>,
-          }
-        ]
-      }
+        // children: [
+        //   {
+        //     path: 'addedGadgets',
+        //     element: <AddedGadgets></AddedGadgets>,
+        //     loader: () => fetch('gadgetsData.json'),
+        //   },
+        // ],
+      },
+      {
+        path: 'addedGadgets',
+        element: <AddedGadgets></AddedGadgets>,
+        // loader: () => fetch('gadgetsData.json'),
+      },
     ]
   },
 ]);

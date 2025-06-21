@@ -48,4 +48,4 @@ const addToStoredWishList = (id) => {
     }
 }
 
-export { addToStoredCart, addToStoredWishList }
+export { addToStoredCart, addToStoredWishList, getStoredCart }

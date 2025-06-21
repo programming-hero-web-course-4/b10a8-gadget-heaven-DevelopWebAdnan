@@ -7,7 +7,7 @@ const Category = ({ uniqueGadgetsCategories }) => {
 
     return (
         <div>
-            <h2 className='text-2xl font-bold'>Category</h2>
+            <h2 className='text-2xl font-bold'>Category.jsx</h2>
 
             <div className="drawer lg:drawer-open lg:flex-1/4">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
