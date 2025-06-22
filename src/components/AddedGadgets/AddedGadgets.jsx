@@ -1,23 +1,33 @@
-import React, { useEffect } from 'react';
 
 import 'react-tabs/style/react-tabs.css';
-import { getStoredCart } from '../../utility/addToCart';
+
 import { Link } from 'react-router-dom';
 
-const AddedGadgets = ({dashboardTabs}) => {
+const AddedGadgets = ({ gadgetInCart}) => {
+    // const [cart, setCart] = useState([]);
     // const allGadgets = useLoaderData();
-    console.log(dashboardTabs);
+    console.log(gadgetInCart);
 
-    const { product_title, product_image, price } = dashboardTabs;
+    const { product_title, product_image, price } = gadgetInCart;
 
-    useEffect(() => {
-        const storedCart = getStoredCart();
+    // useEffect(() => {
+    //     const storedCart = getStoredCart();
 
-        console.log(storedCart, dashboardTabs);
-    }, [dashboardTabs])
+    //     const storedCartInt = storedCart.map(product_id => parseInt(product_id));
+    //     console.log(storedCart, storedCartInt, allGadgets);
+
+    //     const gadgetsInCart = allGadgets.filter(gadget => storedCartInt.includes(gadget.product_id));
+
+    //     setCart(gadgetsInCart);
+
+    // }, [allGadgets, product_id])
+
 
     return (
-        <div className="card bg-base-100 w-96 lg:w-full shadow-sm p-5">
+        <div>
+            <h2 className='text-2xl'>AddedGadgets in cart: {gadgetInCart.length}</h2>
+            <div className="card bg-base-100 w-96 lg:w-full shadow-sm p-5">
+        </div>
             <figure className="h-44 mb-4">
                 <img
                     src={product_image}

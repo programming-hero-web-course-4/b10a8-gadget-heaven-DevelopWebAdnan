@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import AddedGadgets from '../AddedGadgets/AddedGadgets';
+import { getStoredCart } from '../../utility/addToCart';
 
-const DashboardTabs = ({dashboardTabs}) => {
-    console.log(dashboardTabs);
+const DashboardTabs = ({allGadgets}) => {
+    const [cart, setCart] = useState([]);
+
+    console.log(allGadgets);
+
+    useEffect(() => {
+        const storedCart = getStoredCart();
+
+        const storedCartInt = storedCart.map(product_id => parseInt(product_id));
+
+        console.log(storedCart, storedCartInt, allGadgets);
+        const gadgetsInCart = allGadgets.filter(gadgetInCart => storedCartInt.includes(gadgetInCart.product_id))
+
+        setCart(gadgetsInCart);
+
+    }, [allGadgets])
 
     return (
         <div>
@@ -15,8 +30,11 @@ const DashboardTabs = ({dashboardTabs}) => {
                 </TabList>
 
                 <TabPanel>
-                    <h2>AddedGadgets.jsx</h2>
-                    <AddedGadgets dashboardTabs={dashboardTabs}></AddedGadgets>
+                    <h2 className='text-2xl'>Gadgets in cart: {cart.length}</h2>
+                    {
+                        cart.map(gadgetInCart => <AddedGadgets key={gadgetInCart.product_id} gadgetInCart={gadgetInCart}></AddedGadgets>)
+                    }
+                    {/* <AddedGadgets allGadgets={allGadgets}></AddedGadgets> */}
                 </TabPanel>
                 <TabPanel>
                     <h2>Any content 2</h2>

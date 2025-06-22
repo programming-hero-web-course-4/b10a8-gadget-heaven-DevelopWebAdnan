@@ -6,8 +6,8 @@ import { useLoaderData } from 'react-router-dom';
 
 const Dashboard = () => {
 
-    const dashboardTabs = useLoaderData();
-    console.log(dashboardTabs);
+    const allGadgets = useLoaderData();
+    console.log(allGadgets);
 
     return (
         <div>
@@ -19,7 +19,7 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <DashboardTabs dashboardTabs={dashboardTabs}></DashboardTabs>
+            <DashboardTabs allGadgets={allGadgets}></DashboardTabs>
         </div>
     );
 };

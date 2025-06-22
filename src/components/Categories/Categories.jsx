@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Category from '../Category/Category';
 
 const Categories = ({categories}) => {
-    console.log('categories from Categories.jsx: ', categories);
+    // console.log('categories from Categories.jsx: ', categories);
     // // const gadgetsData = useLoaderData();
     // console.log('gadgetsData from Categories.jsx', gadgetsData);
     // const data[5] =
@@ -15,7 +15,7 @@ const Categories = ({categories}) => {
         // console.log('gadgetsObj from Categories', gadgetsObj);
         gadgetsCategories.push(gadgetsObj.category);
     }
-    console.log('gadgetsCategories', gadgetsCategories);
+    // console.log('gadgetsCategories', gadgetsCategories);
 
     const noDuplicates = (array) => {
         console.log('gadgetsData passed as argument to the parameter, array: ', array);
@@ -31,7 +31,7 @@ const Categories = ({categories}) => {
     }
 
     const uniqueGadgetsCategories = noDuplicates(categories);
-    console.log('uniqueGadgetsCategories: ', uniqueGadgetsCategories);
+    // console.log('uniqueGadgetsCategories: ', uniqueGadgetsCategories);
 
 
     // const sixthObjCategory = gadgetsData[7].category;
