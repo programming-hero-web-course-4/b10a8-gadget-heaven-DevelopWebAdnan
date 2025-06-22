@@ -9,7 +9,7 @@ const Category = ({ uniqueGadgetsCategories }) => {
         <div>
             <h2 className='text-2xl font-bold'>Category.jsx</h2>
 
-            <div className="drawer lg:drawer-open lg:flex-1/4">
+            <div className="drawer lg:drawer-open">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col items-center justify-center">
                     {/* Page content here */}
@@ -21,7 +21,7 @@ const Category = ({ uniqueGadgetsCategories }) => {
                     <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
                     <ul className="menu bg-base-200 text-base-content w-56 p-4">
                         {/* Sidebar content here */}
-                         <button className="btn btn-warning" onClick={() => navigate('/')}>All Product</button>
+                         <button className="btn btn-warning" onClick={() => navigate('/gadgets')}>All Product</button>
                         {
                             uniqueGadgetsCategories.map(uniqueGadgetCategory => (
                                 <li key={uniqueGadgetCategory}> <Link to={`/category/${uniqueGadgetCategory}`}>{uniqueGadgetCategory}</Link></li>

@@ -14,7 +14,8 @@ import AddedGadgets from './components/AddedGadgets/AddedGadgets';
 import Gadgets from './components/Gadgets/Gadgets';
 import Categories from './components/Categories/Categories';
 import { ToastContainer } from 'react-toastify';
-  
+import GadgetCards from './components/GadgetCards/GadgetCards';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,12 +29,17 @@ const router = createBrowserRouter([
         children: [
           {
             path: '/',
-            element: <Gadgets></Gadgets>,
+            element: <GadgetCards></GadgetCards>,
             loader: () => fetch('/gadgetsData.json'),
           },
           {
-            path: '/category/:category',
+            path: 'gadgets',
             element: <Gadgets></Gadgets>,
+            loader: () => fetch('../gadgetsData.json'),
+          },
+          {
+            path: '/category/:category',
+            element: <GadgetCards></GadgetCards>,
             loader: () => fetch('/gadgetsData.json'),
           },
         ],
@@ -71,6 +77,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-     <ToastContainer />
+    <ToastContainer />
   </StrictMode>,
 )
