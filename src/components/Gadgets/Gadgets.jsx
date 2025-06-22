@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import Gadget from '../Gadget/Gadget';
 import { useLoaderData, useParams } from 'react-router-dom';
-import AddedGadgets from '../AddedGadgets/AddedGadgets';
 
 const Gadgets = () => {
     const data = useLoaderData();
@@ -19,7 +18,7 @@ const Gadgets = () => {
             setGadgets(filteredByCategory)
         }
         else {
-            setGadgets(data.slice(0, 9))
+            setGadgets(data)
         }
     }, [category, data])
     // console.log(data);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Category from '../Category/Category';
 
 const Categories = ({categories}) => {
@@ -49,7 +48,7 @@ const Categories = ({categories}) => {
         <div>
             <h2 className='text-2xl font-bold'>Categories.jsx</h2>
             {
-                <Category uniqueGadgetsCategories={uniqueGadgetsCategories}></Category>
+                <Category categories={categories} uniqueGadgetsCategories={uniqueGadgetsCategories}></Category>
             }
         </div>
     );
