@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import './Category.css';
 
 const Category = ({ uniqueGadgetsCategories }) => {
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     console.log('uniqueGadgetsCategories props from Category.jsx', uniqueGadgetsCategories);
 
     return (
@@ -19,14 +20,14 @@ const Category = ({ uniqueGadgetsCategories }) => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-                    <ul className="menu bg-base-200 text-base-content w-56 p-4">
+                    <ul className="menu bg-white text-base-content w-60 p-6 rounded-2xl border border-b-gray-100">
                         {/* Sidebar content here */}
-                         <button className="btn btn-warning" onClick={() => navigate('/gadgets')}>All Product</button>
-                        {
-                            uniqueGadgetsCategories.map(uniqueGadgetCategory => (
-                                <li key={uniqueGadgetCategory}> <Link to={`/category/${uniqueGadgetCategory}`}>{uniqueGadgetCategory}</Link></li>
-                            ))
-                        }
+                        <li><NavLink to='/gadgets'>All Product</NavLink></li>
+                            {
+                                uniqueGadgetsCategories.map(uniqueGadgetCategory => (
+                                    <li key={uniqueGadgetCategory}> <NavLink to={`/category/${uniqueGadgetCategory}`}>{uniqueGadgetCategory}</NavLink></li>
+                                ))
+                            }
                         {/* {
                             <li key={category.product_id}><Link to={`/category/${category.category}`}>{category.category}</Link></li>
                         } */}

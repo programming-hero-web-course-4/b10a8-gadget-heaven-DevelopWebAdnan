@@ -1,0 +1,16 @@
+.navbar-center ul li {
+    padding: 10px 0;
+    /* border-radius: 32px; */
+    /* opacity: 5%; */
+}
+.navbar-center ul li a {
+    margin-right: 48px;
+    font-weight:500;
+    color: white;
+    /* opacity: 60%; */
+}
+.navbar-center ul li a.active {
+    text-decoration: underline;
+    font-weight: 700;
+}
+/* btn-lg font-bold rounded-4xl bg-purple-600 text-white */
