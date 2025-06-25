@@ -6,11 +6,11 @@
     /* padding: 22px 13px; */
 
 }
-.drawer-side ul li a {
-    /* color: black; */
-    /* opacity: 60%; */
+/* .drawer-side ul li a {
+    color: black;
+    opacity: 60%;
     font-size: 18px;
-}
+} */
 .drawer-side ul li a.active {
     color: white;
     background-color: blueviolet;

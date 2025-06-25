@@ -1,10 +1,10 @@
-.navbar-center ul li {
+/* .navbar-center ul li {
     padding: 10px 0;
-    /* border-radius: 32px; */
-    /* opacity: 5%; */
-}
+    border-radius: 32px;
+    opacity: 5%;
+} */
 .navbar-center ul li a {
-    margin-right: 48px;
+    /* margin-right: 48px; */
     font-weight:500;
     color: white;
     /* opacity: 60%; */
