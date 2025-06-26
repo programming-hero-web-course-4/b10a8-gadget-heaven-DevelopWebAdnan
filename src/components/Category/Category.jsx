@@ -20,7 +20,7 @@ const Category = ({ uniqueGadgetsCategories }) => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-                    <ul className="menu bg-white text-base-content w-60 p-6 rounded-2xl border border-b-gray-100 text-lg">
+                    <ul className="menu bg-white text-base-content w-60 p-6 rounded-2xl border border-b-gray-100 text-lg relative top-16 lg:static">
                         {/* Sidebar content here */}
                         <li><NavLink to='/gadgets'>All Product</NavLink></li>
                             {
