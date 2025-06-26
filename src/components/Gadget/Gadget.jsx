@@ -17,7 +17,7 @@ const Gadget = ({ gadget }) => {
                 <h2 className="card-title mb-4">{product_title}</h2>
                 <p>Price: {price}</p>
                 <div className="card-actions mt-4">
-                    <Link to={`/gadgets/${product_id}`}><button className="btn btn-lg btn-outline text-purple-600 rounded-4xl">View Details</button></Link>
+                    <Link to={`/gadgets/${product_id}`}><button className="btn btn-lg btn-outline text-purple-600 font-semibold rounded-4xl">View Details</button></Link>
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@ import Heading from '../Heading/Heading';
 import 'react-tabs/style/react-tabs.css';
 import DashboardTabs from '../DashboardTabs/DashboardTabs';
 import { useLoaderData } from 'react-router-dom';
+import AddedGadgets from '../AddedGadgets/AddedGadgets';
 
 const Dashboard = () => {
 
@@ -19,7 +20,7 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <DashboardTabs allGadgets={allGadgets}></DashboardTabs>
+            <AddedGadgets allGadgets={allGadgets}></AddedGadgets>
         </div>
     );
 };
