@@ -1,5 +1,6 @@
 import React from 'react';
 import Category from '../Category/Category';
+import { noDuplicates } from '../../utility/noDuplicates';
 
 const Categories = ({categories}) => {
     // console.log('categories from Categories.jsx: ', categories);
@@ -7,27 +8,6 @@ const Categories = ({categories}) => {
     // console.log('gadgetsData from Categories.jsx', gadgetsData);
     // const data[5] =
     //     { product_id: 6, product_title: 'Acer Swift 3', product_image: 'https://i.ibb.co/WpqLDh42/austin-poon-JO-S6ew-Bq-Ak-unsplash.jpg', category: 'laptop', price: 699, … }
-
-    const gadgetsCategories = [];
-
-    for (const gadgetsObj of categories) {
-        // console.log('gadgetsObj from Categories', gadgetsObj);
-        gadgetsCategories.push(gadgetsObj.category);
-    }
-    // console.log('gadgetsCategories', gadgetsCategories);
-
-    const noDuplicates = (array) => {
-        console.log('gadgetsData passed as argument to the parameter, array: ', array);
-        const uniqueCategories = [];
-
-        for (const singleGadgetCategory of gadgetsCategories) {
-            // console.log('singleGadgetCategory: ', singleGadgetCategory);
-            if (uniqueCategories.includes(singleGadgetCategory) === false) {
-                uniqueCategories.push(singleGadgetCategory)
-            }
-        }
-        return uniqueCategories;
-    }
 
     const uniqueGadgetsCategories = noDuplicates(categories);
     // console.log('uniqueGadgetsCategories: ', uniqueGadgetsCategories);

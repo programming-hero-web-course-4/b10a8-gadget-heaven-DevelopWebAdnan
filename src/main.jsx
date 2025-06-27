@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             loader: () => fetch('/gadgetsData.json'),
           },
           {
-            path: '/category/:category',
+            path: '/category/:uniqueGadgetCategory',
             element: <GadgetCards></GadgetCards>,
             loader: () => fetch('/gadgetsData.json'),
           },

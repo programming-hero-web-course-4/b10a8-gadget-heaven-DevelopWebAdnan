@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import AddedGadgets from '../AddedGadgets/AddedGadgets';
-import { getStoredCart } from '../../utility/addToCart';
 
 const DashboardTabs = () => {
     // const [cart, setCart] = useState([]);

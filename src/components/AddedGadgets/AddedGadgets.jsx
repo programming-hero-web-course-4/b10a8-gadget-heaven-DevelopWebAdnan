@@ -1,7 +1,7 @@
 
 import 'react-tabs/style/react-tabs.css';
 
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { getStoredCart } from '../../utility/addToCart';
 import AddedGadget from '../AddedGadget/AddedGadget';
@@ -10,10 +10,13 @@ import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 const AddedGadgets = ({ allGadgets }) => {
     const [cart, setCart] = useState([]);
 
-    const [cost, setCost] = useState(0);
+    const [totalCost, setTotalCost] = useState(0);
 
-    const handleIncreaseCost = price => {
-        setCost(cost + price)
+    // const handlePurchase = price => {}
+
+    const handleSortByPrice = () => {
+        const sorted = [...cart].sort((a, b) => a.price - b.price)
+        setCart(sorted)
     }
 
     // const allGadgets = useLoaderData();
@@ -34,7 +37,14 @@ const AddedGadgets = ({ allGadgets }) => {
 
         setCart(gadgetsInCart);
 
-    }, [allGadgets])
+        const gadgetsInCartPrices = gadgetsInCart.map(gadgetInCart => gadgetInCart.price)
+        console.log('gadgetsInCartPrices: ', gadgetsInCartPrices)
+
+        const gadgetsInCartTotalCost = gadgetsInCartPrices.map(gadgetInCartPrice => totalCost + gadgetInCartPrice);
+
+        setTotalCost(gadgetsInCartTotalCost);
+
+    }, [allGadgets, totalCost])
 
 
     return (
@@ -50,9 +60,9 @@ const AddedGadgets = ({ allGadgets }) => {
                     <div className='flex justify-between items-center mb-4 md:mb-8'>
                         <h4 className='text-2xl font-bold'>Cart</h4>
                         <div className='flex gap-3 md:gap-6 items-center'>
-                            <h4 className='text-2xl font-bold'>Total Cost: </h4>
+                            <h4 className='text-2xl font-bold'>Total Cost: {totalCost}</h4>
                             <div className='flex gap-2 md:gap-4'>
-                                <button className='btn btn-lg btn-outline text-purple-600 font-semibold rounded-4xl'>Sort by Price</button><button onClick={() => handleIncreaseCost()} className='btn btn-lg font-medium rounded-4xl bg-purple-600 text-white'>Purchase</button>
+                                <button onClick={() => handleSortByPrice()} className='btn btn-lg btn-outline text-purple-600 font-semibold rounded-4xl'>Sort by Price</button><button className='btn btn-lg font-medium rounded-4xl bg-purple-600 text-white'>Purchase</button>
                             </div>
                         </div>
                     </div>

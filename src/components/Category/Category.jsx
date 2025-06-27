@@ -4,7 +4,7 @@ import './Category.css';
 
 const Category = ({ uniqueGadgetsCategories }) => {
     // const navigate = useNavigate()
-    console.log('uniqueGadgetsCategories props from Category.jsx', uniqueGadgetsCategories);
+    // console.log('uniqueGadgetsCategories props from Category.jsx', uniqueGadgetsCategories);
 
     return (
         <div>
